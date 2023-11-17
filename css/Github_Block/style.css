@@ -1,0 +1,31 @@
+#gitImg img {
+    width: 100px;
+    height: 100px;
+}
+
+.container-one {
+    width: 400px;
+    height: 150px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container-two {
+    width: 400px;
+    height: 150px;
+    background-color: rgb(247, 205, 212);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container-three {
+    width: 400px;
+    height: 150px;
+    background-color: rgb(235, 229, 230);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
