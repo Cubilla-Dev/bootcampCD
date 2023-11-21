@@ -1,0 +1,119 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* el css de navbar */
+
+#nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: inline-flex;
+    justify-content: space-around;
+    height: 50px;
+}
+
+#nav a {
+    color: white;
+    text-decoration: none;
+    /* text-decoration-color: transparent; */
+}
+
+#navbar {
+    display: flex;
+    /* flex-direction: inline-flex; */
+    justify-content: space-between;
+    color: white;
+}
+
+#nav button {
+    color: white;
+    background-color: aqua;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+
+
+/* el css del body */
+
+#data_prof {
+    margin: 40px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 0px 3px 3px rgb(105, 102, 102);
+}
+
+.title_data {
+    background-color: rgb(21, 160, 202);
+    height: 100px;
+}
+
+.body_text {
+    position: relative;
+}
+
+.location {
+    display: flex;
+}
+.location img {
+    width: 15px;
+    padding-right: 7px;
+}
+
+.imagen {
+    position: absolute;
+    padding: 10px;
+    top: 120px;
+    border-radius: 50%;
+}
+
+.edit_prof {
+    color: blue;
+    display: flex;
+}
+
+.edit_prof  img {
+    width: 20px;
+    padding-right: 7px;
+}
+
+/* segunda caja de educacion */
+
+#educat {
+    margin: 40px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 0px 3px 3px rgb(105, 102, 102);
+}
+
+#connect_prof {
+    margin: 40px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 0px 3px 3px rgb(105, 102, 102);
+}
+
+.title_connect {
+    background-color: black;
+    color: white;
+    height: 50px;
+}
+
+.prof_users {
+    display: flex;
+}
+
+.prof_users img {
+    border-radius: 50%;
+    width: 50px;
+}
+
+#your_prof_connect {
+    margin: 40px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 0px 3px 3px rgb(105, 102, 102);
+}
