@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <div id="contai_principal">
+        <div class="color_header"></div>
+        <header id="contai_header">
+            <div class="titulo">
+                <h1 class="cambio_color_one">Gaming</h1>
+                <h1 class="cambio_color_two">Dojo</h1>
+            </div>
+            <div class="contai_venta">
+                <select class="select" name="money">
+                    <option value="Euro">Euro €</option>
+                    <option value="Dolar">Dolar $</option>
+                    <option value="Guarani">Guarani ₲</option>
+                </select>
+                <div class="buy">
+                    <img src="./img/cart-light.png">
+                    <h2 id="cantidad">0</h2>
+                </div>
+                <img src="./img/search-light.png">
+            </div>
+        </header>
+        <div id="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <div id="slides">
+                <div id="overflow">
+                    <div class="inner">
+                        <div class="slide slide_1">
+                            <div class="slide-content">
+                            <img src="./img/stonepunk.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide slide_2">
+                        <div class="slide-content">
+                            <img src="./img/cafe-neko.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide slide_3">
+                        <div class="slide-content">
+                            <img src="./img/pixel-ninjas-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide slide_4">
+                        <div class="slide-content">
+                            <img src="./img/pixel-ninjas-2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div id="controls">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+            </div>
+            <div id="bullets">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+            </div>
+        </div>
+        <div id="container">
+            <div id="contai_one">
+                <img name="present" src="./img/cafe-neko.png">
+                <h3>Cafe Neko: Gold Edition</h3>
+                <div class="iconos">
+                    <img src="./img/windows.png" alt="">
+                    <img src="./img/apple.png" alt="">
+                </div>
+                <div class="contai_price">
+                    <h3>-20%</h3>
+                    <div>
+                        <p class="price">€10.49</p>
+                        <p>€10.49</p>
+                    </div>
+                    <button onclick="Buy()">Buy</button>
+                </div>
+            </div>
+            <div id="contai_one">
+                <img name="present" src="./img/pixel-ninjas-2.png">
+                <h3>Pixel Ninjos 2</h3>
+                <div class="iconos">
+                    <img src="./img/windows.png" alt="">
+                    <img src="./img/apple.png" alt="">
+                </div>
+                <div class="contai_price">
+                    <h3>-10%</h3>
+                <div>
+                    <p class="price">€8.1</p>
+                    <p>€10.49</p>
+                </div>
+                <button onclick="Buy()">Buy</button>
+            </div>
+        </div>
+        <div id="contai_one">
+            <img name="present" src="./img/stonepunk.png">
+            <h3>stonepunk 10000 BCE</h3>
+            <div class="iconos">
+                <img src="./img/windows.png" alt="">
+                <img src="./img/apple.png" alt="">
+                <img onclick="funcAlert()" src="./img/linux.png" alt="">
+            </div>
+            <div class="contai_price">
+                <h3>NEW</h3>
+            <div>
+                <br>
+                <p>€19.99</p>
+            </div>
+            <button onclick="Buy()">Buy</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,241 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* outline: 2px dashed black;  */
+}
+
+#contai_principal {
+    position: relative;
+}
+
+#contai_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    height: 70px;
+}
+
+.color_header {
+    background-color: #7a0796de;
+    height: 20px;
+}
+.titulo {
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+}
+.cambio_color_one {
+    color: white;
+}
+.cambio_color_two {
+    color: #7a0796de;
+}
+
+.contai_venta {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    padding-right: 70px;
+}
+
+.select {
+    width: 70px;
+    height: 35px;
+}
+
+.buy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    width: 50px;
+}
+
+.contai_venta img {
+    width: 35px;
+}
+
+/* la parte de slide */
+#slider {
+    margin: 0 auto;
+    width: 550px;
+    max-width: 100%;
+    text-align: center;
+}
+#slider input[type=radio] {
+    display: none;
+}
+#slider label {
+    cursor:pointer;
+    text-decoration: none;
+}
+#slides {
+    padding: 10px;
+    border: 3px solid #ccc;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+#slide1:checked ~ #slides .inner {
+    margin-left: 0;
+}
+#slide2:checked ~ #slides .inner {
+    margin-left: -100%;
+}
+#slide3:checked ~ #slides .inner {
+    margin-left: -200%;
+}
+#slide4:checked ~ #slides .inner {
+    margin-left: -300%;
+}
+#slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 200px;
+}
+#slides .slide {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+.slide-content img {
+    max-width: 100%;
+    height: 200px;
+}
+
+#controls {
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+}
+#controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(1) {
+    background: url(./img/chevron.png) no-repeat right !important;
+    float:right;
+    margin: 0 -50px 0 0;
+    display: block;
+}
+#slide1:checked ~ #controls label:nth-last-child(2),
+#slide2:checked ~ #controls label:nth-last-child(3),
+#slide3:checked ~ #controls label:nth-last-child(4),
+#slide4:checked ~ #controls label:nth-last-child(1) {
+    background: url(./img/chevron-left.png) no-repeat;
+    float:left;
+    margin: 0 0 0 -50px;
+    display: block;
+}
+
+#bullets {
+    margin: 150px 0 0;
+    text-align: center;
+}
+#bullets label {
+    display: inline-block;
+    width: 70px;
+    height: 5px;
+    border-radius:10%;
+    background: #ccc;
+    margin: 0 10px;
+}
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4) {
+    background: #7a0796de;
+}
+@media screen and (max-width: 900px) {
+    #slide1:checked ~ #controls label:nth-child(2),
+    #slide2:checked ~ #controls label:nth-child(3),
+    #slide3:checked ~ #controls label:nth-child(4),
+    #slide4:checked ~ #controls label:nth-child(1),
+    #slide1:checked ~ #controls label:nth-last-child(2),
+    #slide2:checked ~ #controls label:nth-last-child(3),
+    #slide3:checked ~ #controls label:nth-last-child(4),
+#slide4:checked ~ #controls label:nth-last-child(1) {
+    margin: 0;
+}
+}
+
+/* los container de los productos */
+
+#container {
+    position: absolute;
+    left: 215px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 800px;
+    padding-top: 20px;
+}
+
+
+#contai_one {
+    box-sizing: border-box;
+    width: 210px;
+    height: 190px;
+    margin-right: 10px;
+}
+
+#contai_one img[name="present"] {
+    max-width: 100%;
+}
+#contai_one h3 {
+    display: flex;
+    align-items: end;
+}
+
+.iconos {
+    display: flex;
+    flex-direction: row;
+    width: 50px;
+    height: 25px;
+    padding-bottom: 10px;
+}
+.iconos img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.contai_price {
+    display: flex;
+    justify-content: space-around;
+}
+.contai_price h3 {
+    display: flex;
+    align-items: center;
+    background: #7a0796de;
+    width: 51px;
+}
+
+.price {
+    text-decoration: overline;
+}
+.contai_price button {
+    width: 40px;
+    background-color: rgb(51, 176, 51);
+    box-shadow: 0 2px 5px #000;
+}
+

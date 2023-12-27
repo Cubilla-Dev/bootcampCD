@@ -1,14 +1,26 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    outline:  2px dashed black;
+}
+
 .container {
+    padding: 300px;
     width: 950px;
     background-color: silver;
     margin: 0px auto;
-    display: flex;
-    flex-direction: row;
+    /* display: flex; */
+    /* flex-direction: row; */
 }
 
 .top-nav {
+    padding: 10px;
     height: 150px;
     background-color: green;
+}
+.contai_bot {
+    display: flex;
+    flex-direction: row;
 }
 
 .side-nav {
@@ -18,12 +30,14 @@
 }
 
 .main {
+    padding: 10px;
     height: 400px;
     width: 700px;
     background-color: red;
 }
 
 .sub-content {
+    padding: 10px;
     height: 200px;
     width: 210px;
     background-color: yellow;
