@@ -14,7 +14,7 @@ const employee = {
 }
 const { name: otherName } = employee;
 //Predict the output
-// console.log(name); //indefinido
+// console.log(name); //underfined
 console.log(otherName); //Elon
 
 
