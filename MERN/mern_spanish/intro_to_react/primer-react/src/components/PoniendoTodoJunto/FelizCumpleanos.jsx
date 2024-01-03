@@ -9,7 +9,8 @@ const FelizCumpleanos = ({ nombre, apellido, edad, color }) => {
     };
 
     return (
-    <div className={style.container} style={{background: `${color}`}}>        <h1>{nombre}, {apellido}</h1>
+    <div className={style.container} style={{background: `${color}`}}>
+        <h1>{nombre}, {apellido}</h1>
         <h4>Age: {edadActual}</h4>
         <h4>Her Color: {color}</h4>
         <button onClick={aumentoEdad}>Birthday Button for {nombre} {apellido}</button>
