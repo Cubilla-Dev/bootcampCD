@@ -1,29 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const QueHaceres = () => {
     const [tasks, setTasks] = useState([]);
     const [over, setOver] = useState([]);
+
+    useEffect(()=>{
+        setOver(Array(tasks.length).fill(false))
+    }, [tasks])
 
     const grateWord = (index) => {
         const newOver = [...over];
         newOver[index] = !over[index];
         setOver(newOver);
     };
-
     const deleteItem = (index) => {
-        const newTasks = tasks.filter((_, i) => i !== index);
-        const newOver = [...over];
-        newOver.splice(index, 1);
-
-        setTasks(newTasks);
-        setOver(newOver);
-    };
-
-    const ADD = () => {
-        const newTask = 'Nueva tarea';
-        setTasks([...tasks, newTask]);
-        setOver([...over, false]);
-    };
+        const newTasks = tasks.filter((number) => number !== index)
+        console.log(newTasks )
+        setTasks(newTasks)
+    }
+    const ADD = (e) => {
+        setTasks(['tarea', 'caminar'])
+    }
 
     return (
         <div>

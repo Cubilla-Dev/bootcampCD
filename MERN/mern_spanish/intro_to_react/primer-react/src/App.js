@@ -1,16 +1,10 @@
-// import Formulario from './components/MasFormularios/Formulario';
-// import Lista from './components/MiPrimerReact/Lista';
-// import FelizCumpleanos from './components/PoniendoTodoJunto/FelizCumpleanos';
-
-import QueHaceres from "./components/ListaDeQuehaceres/QueHaceres";
+import Axios from "./components/AxiosPokemon/Axios";
+import Render from "./components/RenderizarPropiedades/Render";
 
 function App() {
   return (
     <div className="App">
-      {/* <Lista/> */}
-      {/* <FelizCumpleanos nombre={'Gustavo'} apellido={'Cubilla'} edad={35} color={'green'} /> */}
-      {/* <Formulario/> */}
-      <QueHaceres/>
+      <Axios/>
     </div>
   );
 }
