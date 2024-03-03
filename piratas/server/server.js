@@ -4,6 +4,7 @@ const PORT = 3000
 const router = require('./src/routers/pirata.routes')
 const config = require('./config')
 const cors = require('cors')
+const { swaggerDocs } = require('./condigSwagger')
 
 //conexion a la db
 require('./mongoose.config')
@@ -20,4 +21,5 @@ app.use(router)
 
 app.listen(config.api.port, ()=>{
     console.log(`El server esta en linea en el puerto ${PORT}`)
+    swaggerDocs(app, config.api.port)
 })
